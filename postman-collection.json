@@ -1,0 +1,35 @@
+{
+  "info": {
+    "name": "Leonardo test API",
+    "_postman_id": "12345678-90ab-cdef-1234-567890abcdef",
+    "description": "Test Leonardo API for image upload and video generation.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Generate Video from Image",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "image",
+              "type": "file",
+              "src": ""
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/generate",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["generate"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
